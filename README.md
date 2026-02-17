@@ -1,2 +1,2 @@
 # calc
-My calculator
+My calculator, made by Maurits from Mausite.nl
