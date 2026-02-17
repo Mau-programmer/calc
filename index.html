@@ -5,16 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>calculator</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <p id="output"></p>
-    <button>Square</button>
-    <button>divide</button>
-    <button>root</button>
-    <button>multiply</button>
-    <button>add</button>
-    <button>substract</button>
+    <main>
+        <p id="output">Punch in two numbers and begin!</p>
+        <div class="optionContainer">
+            <button onclick="square(this)"">num<sup>2</sup></button>
+        <button onclick=" divide(this)">/</button>
+            <button onclick="root(this)">&Sqrt;</button>
+            <button onclick="multi(this)">*</button>
+            <button onclick="add(this)">+</button>
+            <button onclick="min(this)">-</button>
+        </div>
+        <div class="inpContainer">
+            <input type="number" id="num1">
+            <p id="selectedOption">...</p>
+            <input type="text" id="num2">
+        </div>
+    </main>
+
+
+    <script src="app.js"></script>
 </body>
 
 </html>
