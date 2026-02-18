@@ -10,20 +10,26 @@
 
 <body>
     <main>
-        <p id="output">Punch in two numbers and begin!</p>
-        <div class="optionContainer">
-            <button onclick="square(this)"">num<sup>2</sup></button>
-        <button onclick=" divide(this)">/</button>
-            <button onclick="root(this)">&Sqrt;</button>
-            <button onclick="multi(this)">*</button>
-            <button onclick="add(this)">+</button>
-            <button onclick="min(this)">-</button>
+        <div id="calc">
+            <h1 id="name">Mausite instruments Calc 5000</h1>
+            <p id="output">Punch in two numbers and begin!</p>
+
+            <div class="inpContainer">
+                <input type="number" id="num1">
+                <p id="selectedOption">...</p>
+                <input type="text" id="num2">
+            </div>
+            <div class="optionContainer">
+                <button onclick="maths.square(this)"">a<sup>2</sup></button>
+        <button onclick=" maths.divide(this)">/</button>
+                <button onclick="maths.root(this)">&Sqrt;</button>
+                <button onclick="maths.multi(this)">*</button>
+                <button onclick="maths.add(this)">+</button>
+                <button onclick="maths.min(this)">-</button>
+                <button onclick="maths.resultForInp(this)">result</button>
+            </div>
         </div>
-        <div class="inpContainer">
-            <input type="number" id="num1">
-            <p id="selectedOption">...</p>
-            <input type="text" id="num2">
-        </div>
+
     </main>
 
 
